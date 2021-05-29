@@ -8,14 +8,12 @@ public class calculator
     final String no="0123456789";
     /** accept() --> check() (if valid) --> adjust() --> brackets() --> bedmas() --> calculate(), after removing and finishing all brackets and operations within it, bedmas() is called      */
                                                     
-    calculator()
-    {}
     public void accept() 
     {
         Scanner sc = new Scanner(System.in);  boolean valid=false;  String choice;
         char ch1;
-        System.out.println("Do not press 'spacebar' or '_' or '#' or '$' or '=' or '@'");
-        System.out.println("Do not enter any alphabet except for 'f' to exit and 'c' to clear:");
+        System.out.println("Do not press 'spacebar' or any special characters that is not considered as operators");
+        System.out.println("Do not enter any alphabet except for 'f' to exit and 'c' to clear:"); System.out.println();
         do // loop continue until the user exits...
         { 
             System.out.println("Enter your arithmatic operation or press f to EXIT:");
@@ -478,43 +476,3 @@ public class calculator
         System.out.println("Thank You");
     }
 }// end of class
- /*while(i<l && s.indexOf('(')>-1 && s.indexOf(')')>-1) 
-            {
-                if((s.substring(0,c)).indexOf(')')>-1)// if there is ')' without an opening/starting '('
-                {  
-                    System.out.println("Invalid 1 for ) coming before ( "); valid=false; break;
-                }
-                if(s.charAt(i)=='(')
-                {
-                    c=i; // here it stores the last position of '('
-                }   
-                else if(s.charAt(i)==')')
-                {
-                    if(c==0)
-                    {
-                        s=s.substring(1,i)+s.substring(i+1); // taking off chosen '()'
-                        c=s.indexOf('('); valid=true;
-                    }
-                    if(c>0)
-                    {
-                        System.out.println("Chosen inner brackets: "+s.substring(c,i+1));
-                        last_position=(s.substring(0,c)).lastIndexOf('('); // stores the position of prev '('
-                        s=s.substring(0,c)+s.substring(c+1,i)+s.substring(i+1); // taking off chosen '()'      
-                        c=last_position; valid=true;
-                    }
-                    System.out.println("New String: "+s); // after deletion, new string printed
-                    System.out.println();
-                    l=s.length(); 
-                    if(c==-1) // if there is no prev '('
-                        c=s.indexOf('(');
-                    else
-                        i=c+1;
-                }
-                if((s.indexOf('(')>-1 && s.indexOf(')')==-1) || (s.indexOf('(')==-1 && s.indexOf(')')>-1))
-                {
-                     /** condition for checking if no. of '('== no.of ')'   
-                     System.out.println("Invalid 2 for unequal no. of ( and )"); valid=false; // i=0 for indicating that no. of ( and ) are not equal...
-                     break; 
-                }
-                i++; // proceed to next position of stirng...
-            }*/
