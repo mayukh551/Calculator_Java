@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=calculator()
+comment0.text=accept()\ -->\ check()\ (if\ valid)\ -->\ adjust()\ -->\ brackets()\ -->\ bedmas()\ -->\ calculate(),\ after\ removing\ and\ finishing\ all\ brackets\ and\ operations\ within\ it,\ bedmas()\ is\ called
+comment1.params=
+comment1.target=void\ accept()
+comment2.params=
+comment2.target=java.lang.String\ check()
+comment3.params=
+comment3.target=void\ adjust()
+comment4.params=
+comment4.target=void\ brackets()
+comment5.params=t
+comment5.target=java.lang.String\ bedmas(java.lang.String)
+comment6.params=t\ operator
+comment6.target=java.lang.String\ calculate(java.lang.String,\ char)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8
